@@ -83,5 +83,3 @@ Then /the director of "(.*)" should be "(.*)"/ do |movie_title, director|
   assert_equal text, "Director: #{director}"
   assert_equal Movie.find_by_title(movie_title).director, director
 end
-
-
